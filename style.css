@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+                                               /*Css Reset*/
+                                               
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Arvo', serif;
+}
+
+.container {
+	position: relative;
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #7fd0ff;
+}
+
+
+.card {
+	width: 400px;
+	height: 500px;
+	position: relative;
+	background: #fff;
+	border-radius: 10px;
+	overflow: hidden;
+	margin: 10px;
+}
+
+.card::before {
+	content: ' ';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #1392db;
+	clip-path: circle(90.14% at 85% 10%);
+	transition: 0.5s;
+}
+
+
+.card:hover::before {
+	clip-path: circle(46.16% at 76.25% 1.60%);
+	font-size: 3em;
+	text-align: right;
+	line-height: 1;
+}
+
+
+
+.imgBx {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 60%;
+}
+
+.imgBx img {
+	position: absolute;
+	top: -24px;
+	right: -93px;
+	 width: 600px; 
+	transform: rotate(-8deg);
+	transition: 0.5s;
+}
+
+.card:hover .imgBx img {
+	top: -8px;
+	transform: rotate(-25deg);
+	width: 420px;
+	right: 20px;
+}
+
+
+.txtContent {
+	position: absolute;
+	bottom: 2px;
+	width: 100%;
+	height: 49%;
+	text-align: center;
+}
+
+.txtContent h2 {
+	font-size: 9em;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 600;
+	transition: 0.7s;
+	line-height: 250px;
+	color: #121313;
+}
+
+.card:hover .txtContent h2{
+	color: #0b79b9;
+	line-height: 85px;
+	opacity: 1;
+	font-size: 4em;
+}
+
+
+.size {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	margin: 2px;
+	line-height: 140px;
+	opacity: 0;
+	transition: 0.5s;
+	transition-delay: 0.3s;
+}
+.card:hover .size{
+	line-height: 40px;
+	opacity: 1;
+}
+
+.color {
+	display: flex;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	padding-right: 103px;
+	 transition: 0.5s; 
+	margin-top: 60px;
+	opacity: 0;
+	transition-delay: 0.4s;
+	width: 100%;
+	height: 42px;
+}
+.card:hover .color{
+	margin-top: 6px;
+	opacity: 1;
+}
+
+.size h3{
+	font-size: 22px;
+	text-transform: uppercase;
+	font-weight: 600;
+	padding-right: 5px;
+}
+
+.size span {
+	font-size: 18px;
+	font-weight: 500;
+	padding: 0px 7px;
+	background: black;
+	margin: 2px;
+	color: #fff;
+}
+
+.size  span:nth-child(2):hover{
+	background: grey;
+}
+.size  span:nth-child(3):hover{
+	background: grey;
+}
+.size  span:nth-child(4):hover{
+	background: grey;
+}
+.size  span:nth-child(5):hover{
+	background: grey;
+}
+.size  span:nth-child(6):hover{
+	background: grey;
+}
+
+.color h3{
+	font-size: 22px;
+	text-transform: uppercase;
+	font-weight: 600;
+	padding-right: 16px;
+}
+
+.color span {
+	position: absolute;
+	top: 13px;
+	right: 46%;
+	background: #07b6fb;
+	width: 15px;
+	height: 15px;
+	border-radius: 50%;
+	margin: 0px 5px;
+}
+
+.color span:nth-child(2) {
+	background: #97ff00;
+	right: 40%;
+}
+
+.color span:nth-child(3) {
+	background: #c700ff;
+	right: 33%;
+}
+
+.color span:nth-child(4) {
+	background: #ff6c00;
+	right: 26%;
+}
+
+
+.btn {
+	background: #0f0f0f;
+	text-decoration: none;
+	color: #fff;
+	padding: 15px 35px;
+	border-radius: 10px;
+	outline: none;
+	border: none;
+	line-height: 100px;
+	opacity: 0;
+	transition-delay: 0.5s;
+}
+
+.card:hover .btn{
+	line-height: 70px;
+	opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
